@@ -13,37 +13,35 @@ body{
 
 :root{
     --white: white;
-    --white2: rgb(65, 179, 255); #f6f8f9;
+    --white2: #f6f8f9;; 
     --skyblue: rgb(71, 173, 241);
     --gray: rgb(205, 210, 215);
     --green: rgb(100, 192, 169);
+    --green2: rgb(176, 201, 38);
     --violet: rgb(156, 114, 228);
     --red: red;
     --orange: rgb(242, 158, 51);
+    --pink: rgb(216, 99, 161);
+}
+
+.check, .x{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle; 
 }
 
 .check{
-    width: 20px;
-    height: 20px;
     color: var(--green);
     border: 1px solid var(--green);
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: 20px;
-    vertical-align: middle; 
 }
 
 .x{
-    width: 20px;
-    height: 20px;
     color: var(--red);
     border: 1px solid var(--red);
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: 20px;
-    vertical-align: middle; 
 }
 /* #endregion Common */
 
@@ -72,11 +70,12 @@ body{
 /* #region Main */ 
 
 main{
-    width: 80%;
+    width: 70%;
     margin: auto;
     background-color: var(--white);
-    padding-left: 10%;
+    padding-left: 50px;
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 section{
@@ -102,48 +101,40 @@ button{
 
 .button2{
     background-color: var(--white);
-    color: var(--gray);
     border-color: var(--gray);
+    color: var(--gray);
+}
+
+.square{
+    border-radius: 10px;
+    padding: 5px 8px;
+    font-size: 10px;
+    color: var(--white);
 }
 
 .square1{
-    color: var(--white);
     background-color: var(--skyblue);
-    border-radius: 10px;
-    padding: 5px 8px;
-    font-size: 10px;
 }
 
 .square2{
-    color: var(--white);
     background-color: var(--violet);
-    border-radius: 10px;
-    padding: 5px 8px;
-    font-size: 10px;
 }
 
 .square3{
-    color: var(--white);
     background-color: var(--green);
-    border-radius: 10px;
-    padding: 5px 8px;
-    font-size: 10px;
 }
 
 .square4{
-    color: var(--white);
     background-color: var(--orange);
-    border-radius: 10px;
-    padding: 5px 8px;
-    font-size: 10px;
 }
 
+.square5{
+    background-color: var(--pink);
+}
 
-
-
-
-
-
+.square6{
+    background-color: var(--green2);
+}
 
 /* #endregion Main */
 
