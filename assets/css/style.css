@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: robot;
+    font-family: roboto;
 }
 
 body{
@@ -13,11 +13,38 @@ body{
 
 :root{
     --white: white;
-    --white2:  #f6f8f9;
+    --white2: rgb(65, 179, 255); #f6f8f9;
     --skyblue: rgb(71, 173, 241);
     --gray: rgb(205, 210, 215);
+    --green: rgb(100, 192, 169);
+    --violet: rgb(156, 114, 228);
+    --red: red;
+    --orange: rgb(242, 158, 51);
 }
 
+.check{
+    width: 20px;
+    height: 20px;
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle; 
+}
+
+.x{
+    width: 20px;
+    height: 20px;
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle; 
+}
 /* #endregion Common */
 
 /* #region Header */ 
@@ -47,8 +74,17 @@ body{
 main{
     width: 80%;
     margin: auto;
-    margin-top: 40px;
     background-color: var(--white);
+    padding-left: 10%;
+    margin-top: 40px;
+}
+
+section{
+    margin-top: 40px;
+}
+
+section>div{
+    margin-top: 15px;
 }
 
 button{
@@ -59,7 +95,6 @@ button{
 }
 
 .button1{
-    margin-left: 10%;
     background-color: var(--skyblue);
     border-color: var(--skyblue);
     color: var(--white);
@@ -70,6 +105,39 @@ button{
     color: var(--gray);
     border-color: var(--gray);
 }
+
+.square1{
+    color: var(--white);
+    background-color: var(--skyblue);
+    border-radius: 10px;
+    padding: 5px 8px;
+    font-size: 10px;
+}
+
+.square2{
+    color: var(--white);
+    background-color: var(--violet);
+    border-radius: 10px;
+    padding: 5px 8px;
+    font-size: 10px;
+}
+
+.square3{
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 5px 8px;
+    font-size: 10px;
+}
+
+.square4{
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 10px;
+    padding: 5px 8px;
+    font-size: 10px;
+}
+
 
 
 
